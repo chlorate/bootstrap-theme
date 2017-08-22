@@ -1,4 +1,9 @@
 {
+	"name": "bootstrap-theme",
+	"version": "0.0.0",
+	"scripts": {
+		"install": "make src/retro8.ttf src/retro16.ttf"
+	},
 	"devDependencies": {
 		"bootstrap": "4.0.0-beta",
 		"bootstrap-loader": "2.2.0",
