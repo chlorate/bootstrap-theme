@@ -38,7 +38,8 @@ a.btn:not(.btn-link):focus {
 	color: #fff;
 }
 
-// Table theme colors
+// Table theme colors: dark background instead of light and lighten on hover
+// instead of darken.
 @each $color, $value in $theme-colors {
 	$background: theme-color-level($color, 8);
 	$hover-background: lighten($background, 5%);
