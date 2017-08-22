@@ -1,4 +1,5 @@
 WEBPACK=node_modules/.bin/webpack
+WEBPACK_DEV_SERVER=node_modules/.bin/webpack-dev-server
 EXTERNAL_FILES=src/retro8.ttf src/retro16.ttf
 
 .PHONY: build
@@ -8,7 +9,7 @@ build: $(EXTERNAL_FILES) node_modules
 
 .PHONY: watch
 watch: $(EXTERNAL_FILES) node_modules
-	$(WEBPACK) -d --watch
+	$(WEBPACK_DEV_SERVER)
 
 .PHONY: clean
 clean: 
