@@ -1,9 +1,8 @@
 ---
 bootstrapVersion: 4
-useFlexbox: true
 extractStyles: true
 preBootstrapCustomizations: src/pre-bootstrap.scss
-bootstrapCustomizations: src/bootstrap.scss
+appStyles: src/post-bootstrap.scss
 
 styleLoaders:
   - style
@@ -16,7 +15,6 @@ styles:
   forms: true
   grid: true
   mixins: true
-  normalize: true
   print: true
   progress: true
   reboot: true
