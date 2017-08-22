@@ -1,17 +1,18 @@
 {
 	"devDependencies": {
-		"bootstrap": "4.0.0-alpha.6",
-		"bootstrap-loader": "2.1.0",
-		"css-loader": "0.28.4",
+		"bootstrap": "4.0.0-beta",
+		"bootstrap-loader": "2.2.0",
+		"css-loader": "0.28.5",
 		"extract-text-webpack-plugin": "3.0.0",
 		"file-loader": "0.11.2",
 		"html-webpack-plugin": "2.30.1",
 		"node-sass": "4.5.3",
+		"npm-check-updates": "2.12.1",
 		"resolve-url-loader": "2.1.0",
 		"sass-loader": "6.0.6",
 		"style-loader": "0.18.2",
 		"url-loader": "0.5.9",
-		"webpack": "3.2.0",
+		"webpack": "3.5.5",
 		"webpack-dev-server": "2.7.1"
 	}
 }
