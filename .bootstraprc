@@ -10,6 +10,7 @@ styleLoaders:
   - sass
 
 styles:
+  alert: true
   buttons: true
   card: true
   forms: true
