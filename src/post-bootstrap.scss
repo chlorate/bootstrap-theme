@@ -38,6 +38,12 @@ a.btn:not(.btn-link):focus {
 	color: #fff;
 }
 
+// Use card background color for card header tabs.
+.card-header-tabs .nav-link.active {
+	background: $card-bg;
+	border-bottom-color: $card-bg;
+}
+
 // Alert theme colors: dark background and light text.
 @each $color, $value in $theme-colors {
 	.alert-#{$color} {
