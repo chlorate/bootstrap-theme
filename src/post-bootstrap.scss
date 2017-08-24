@@ -10,7 +10,6 @@
 
 html, body {
 	height: 100%;
-	font-size: 17px;
 	overflow: auto;
 }
 
@@ -29,13 +28,14 @@ body,
 
 // Box outline
 .card,
-.btn:not(.btn-link) {
+.btn:not(.btn-link),
+.progress {
 	box-shadow: 0 0 0 1px black;
 }
 
 // Button hover text color
 a.btn:not(.btn-link):focus {
-	color: #fff;
+	color: $white;
 }
 
 // Use card background color for card header tabs.
