@@ -21,7 +21,6 @@ clean-deps:
 
 node_modules: package.json
 	npm install
-	touch $@
 
 src/retro8.ttf:
 	curl https://raw.githubusercontent.com/chlorate/retro8/master/dist/retro8.ttf > $@

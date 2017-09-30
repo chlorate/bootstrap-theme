@@ -9,8 +9,5 @@ jobs:
           name: Install Node dependencies
           command: make node_modules
       - run:
-          name: Download fonts
-          command: make src/retro8.ttf src/retro16.ttf
-      - run:
           name: Build
           command: PATH=$PATH:~/bin make build
