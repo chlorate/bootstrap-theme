@@ -28,7 +28,7 @@ body,
 
 // Box outline
 .card,
-.btn:not(.btn-link),
+.btn:not(.btn-link):not(:focus),
 .progress {
 	box-shadow: 0 0 0 1px black;
 }
