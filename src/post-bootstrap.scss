@@ -33,6 +33,7 @@ body,
 	box-shadow: 0 0 0 1px $black;
 }
 
+.btn-group .btn:not(:focus),
 .input-group-btn .btn:not(:focus) {
 	box-shadow: none;
 }
