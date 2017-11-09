@@ -42,10 +42,9 @@ a.btn:not(.btn-link):focus {
 	color: $white;
 }
 
-// Close button: fix vertical centring and add margin between button and text.
+// Close button: fix vertical centring.
 .close {
-	margin-left: $spacer;
-	line-height: 1.5rem;
+	line-height: 1.5625rem;
 }
 
 // Use card background color for card header tabs.
