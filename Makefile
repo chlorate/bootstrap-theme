@@ -10,7 +10,7 @@ build: $(EXTERNAL_FILES) node_modules
 
 .PHONY: watch
 watch: $(EXTERNAL_FILES) node_modules
-	$(WEBPACK_DEV_SERVER)
+	$(WEBPACK_DEV_SERVER) --mode development
 
 .PHONY: clean
 clean: 

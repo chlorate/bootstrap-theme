@@ -5,7 +5,6 @@ preBootstrapCustomizations: src/pre-bootstrap.scss
 appStyles: src/post-bootstrap.scss
 
 styleLoaders:
-  - style
   - css
   - sass
 
