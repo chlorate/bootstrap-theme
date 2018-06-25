@@ -1,6 +1,6 @@
 {
 	"name": "bootstrap-theme",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"scripts": {
 		"install": "make src/retro8.ttf src/retro16.ttf"
 	},
