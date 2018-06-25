@@ -115,24 +115,26 @@
 						Input group
 					</label>
 					<div class="input-group">
-						<span class="input-group-addon" id="input-group-addon-left">
-							Left
-						</span>
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="input-group-text-left">
+								Left
+							</span>
+						</div>
 						<input
 							type="text"
 							class="form-control"
 							id="input-group"
 							placeholder="Input placeholder"
-							aria-describedby="input-group-addon-left input-group-addon-right"
+							aria-describedby="input-group-text-left input-group-text-right"
 						>
-						<span class="input-group-btn">
+						<div class="input-group-append">
 							<button class="btn btn-primary">
 								Button
 							</button>
-						</span>
-						<span class="input-group-addon" id="input-group-addon-right">
-							Right
-						</span>
+							<span class="input-group-text" id="input-group-text-right">
+								Right
+							</span>
+						</div>
 					</div>
 				</div>
 			</form>
