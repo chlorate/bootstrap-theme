@@ -4,6 +4,7 @@
 
 - Upgrade to stable release of Bootstrap 4.
 - Add `.list-group` styles.
+- Add dark theme colour.
 - Fix `.nav-tabs` bottom border colour.
 
 ## 1.0.0 (2017-11-14)
