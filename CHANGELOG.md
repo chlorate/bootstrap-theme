@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.1
+## 1.1.0
 
 - Upgrade to stable release of Bootstrap 4.
 - Fix `.nav-tabs` bottom border colour.
