@@ -69,16 +69,28 @@ a.btn:not(.btn-link):focus {
 	}
 }
 
-// Table theme colors: dark background instead of light and lighten on hover
-// instead of darken.
+// Theme colors: dark background instead of light and lighten on hover instead
+// of darken.
 @each $color, $value in $theme-colors {
+	$text: lighten($value, 30%);
 	$background: theme-color-level($color, 8);
 	$hover-background: lighten($background, 5%);
 
+	@include list-group-item-variant($color, $background, $text);
 	@include table-row-variant($color, $background);
 
+	.list-group-item-#{$color}.list-group-item-action {
+		@include hover-focus {
+			background-color: $hover-background;
+		}
+
+		&.active {
+			background-color: $text;
+		}
+	}
+
 	.table-#{$color} {
-		color: lighten($value, 30%);
+		color: $text;
 	}
 
 	.table-hover .table-#{$color} {
