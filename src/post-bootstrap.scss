@@ -74,6 +74,11 @@ a.btn:not(.btn-link):focus {
 	}
 }
 
+// Badge vertical centering
+.badge {
+	vertical-align: 15%;
+}
+
 // Theme colors: dark background instead of light and lighten on hover instead
 // of darken.
 @each $color, $value in $theme-colors {
