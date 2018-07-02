@@ -12,6 +12,7 @@ styles:
   nav: true
 
   alert: true
+  badge: true
   button-group: true
   buttons: true
   card: true
