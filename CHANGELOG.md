@@ -4,6 +4,7 @@
 
 - Upgrade to stable release of Bootstrap 4.
 - Add `.badge` styles.
+- Add code styles.
 - Add `.list-group` styles.
 - Add dark theme colour.
 - Fix `.nav-tabs` bottom border colour.

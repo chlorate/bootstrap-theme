@@ -37,6 +37,8 @@ $close-color: #fff;
 $close-font-size: 2rem;
 $close-text-shadow: inherit;
 
+$code-color: #28dd28;
+
 $font-family-sans-serif: retro16, arial, sans-serif;
 $font-size-base: 1.0625rem; // 17px
 $font-size-sm: 0.8125rem;
@@ -68,6 +70,8 @@ $nav-tabs-link-active-bg: $body-bg;
 $nav-tabs-link-active-border-color: $gray-800 $gray-800 $nav-tabs-link-active-bg;
 $nav-tabs-link-active-color: $body-color;
 $nav-tabs-link-hover-border-color: $gray-900 $gray-900 $nav-tabs-border-color;
+
+$pre-color: $code-color;
 
 $progress-bg: #000;
 

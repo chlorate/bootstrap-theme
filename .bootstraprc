@@ -16,6 +16,7 @@ styles:
   button-group: true
   buttons: true
   card: true
+  code: true
   close: true
   forms: true
   grid: true
