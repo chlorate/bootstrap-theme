@@ -7,6 +7,7 @@
 - Add code styles.
 - Add `.list-group` styles.
 - Add dark theme colour.
+- Brighten utility text colour styles.
 - Fix `.nav-tabs` bottom border colour.
 
 ## 1.0.0 (2017-11-14)

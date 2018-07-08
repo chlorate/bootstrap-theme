@@ -88,6 +88,7 @@ a.btn:not(.btn-link):focus {
 
 	@include list-group-item-variant($color, $background, $text);
 	@include table-row-variant($color, $background);
+	@include text-emphasis-variant(".text-#{$color}", $text);
 
 	.list-group-item-#{$color}.list-group-item-action {
 		@include hover-focus {
