@@ -8,11 +8,11 @@ $gray-900: #212529;
 // Custom colors
 
 $theme-colors: (
-	primary: #306580,
+	primary: #28546c,
 	secondary: $gray-800,
-	info: #137277,
+	info: #1d5758,
 	success: #295229,
-	warning: #675d2a,
+	warning: #574e23,
 	danger: #752f2d,
 	dark: #000,
 );
@@ -21,6 +21,8 @@ $gray-1000: darken($gray-900, 5%);
 $gray-1100: darken($gray-900, 10%);
 
 // Variables
+
+$yiq-text-light: #eee;
 
 $badge-font-weight: normal;
 
@@ -54,7 +56,7 @@ $input-disabled-bg: $gray-1100;
 
 $input-group-addon-bg: $gray-1100;
 
-$link-color: lighten(map-get($theme-colors, "primary"), 20%);
+$link-color: lighten(map-get($theme-colors, "primary"), 27.5%);
 $link-hover-color: darken($link-color, 15%);
 
 $list-group-action-active-bg: $gray-900;
@@ -74,6 +76,7 @@ $nav-tabs-link-hover-border-color: $gray-900 $gray-900 $nav-tabs-border-color;
 $pre-color: $code-color;
 
 $progress-bg: #000;
+$progress-bar-color: $yiq-text-light;
 
 $small-font-size: 0.8125rem;
 

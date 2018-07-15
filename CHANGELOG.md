@@ -8,6 +8,7 @@
 - Add `.list-group` styles.
 - Add dark theme colour.
 - Brighten utility text colour styles.
+- Tweak colours slightly to improve contrast.
 - Enable font kerning for Edge.
 - Fix `.nav-tabs` bottom border colour.
 

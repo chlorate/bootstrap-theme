@@ -53,6 +53,17 @@ a.btn:not(.btn-link):focus {
 	color: $white;
 }
 
+// Secondary background text color: slightly darker.
+.badge-secondary,
+.badge-secondary[href]:hover,
+.badge-secondary[href]:focus,
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled):active:focus {
+	color: #ccc;
+}
+
 // Close button: fix vertical centring.
 .close {
 	line-height: 1.5625rem;
@@ -64,6 +75,11 @@ a.btn:not(.btn-link):focus {
 	border-bottom-color: $card-bg;
 }
 
+// Badge vertical centering
+.badge {
+	vertical-align: 15%;
+}
+
 // Alert theme colors: dark background and light text.
 @each $color, $value in $theme-colors {
 	.alert-#{$color} {
@@ -73,11 +89,6 @@ a.btn:not(.btn-link):focus {
 			theme-color-level($color, -8)
 		);
 	}
-}
-
-// Badge vertical centering
-.badge {
-	vertical-align: 15%;
 }
 
 // Theme colors: dark background instead of light and lighten on hover instead
