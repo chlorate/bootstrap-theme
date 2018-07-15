@@ -12,6 +12,7 @@ html,
 body {
 	height: 100%;
 	overflow: auto;
+	font-feature-settings: "kern";
 }
 
 // Make buttons and inputs use the current font.
