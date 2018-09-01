@@ -8,6 +8,7 @@
 - Add code styles.
 - Add `.list-group` styles.
 - Add dark theme colour.
+- Add outline around alerts, button groups, form controls, input groups, and tables.
 - Brighten utility text colour styles.
 - Tweak colours slightly to improve contrast.
 - Enable font kerning for Edge.

@@ -21,7 +21,7 @@ body {
 	font-family: inherit;
 }
 
-// Text shadow
+// Drop shadow
 body,
 .btn,
 .form-control {
@@ -33,20 +33,61 @@ body,
 	text-shadow: 1px 0 $gray-500, 0 1px $gray-500, 1px 1px $gray-500;
 }
 
+hr {
+	box-shadow: 1px 0 black, 0 1px black, 1px 1px black;
+}
+
 // Box outline
+.alert,
 .badge,
-.card,
+.breadcrumb,
 .btn:not(.btn-link):not(:focus),
-.progress {
+.btn-group,
+.card,
+.form-control,
+.input-group,
+.list-group,
+.progress,
+.table {
 	box-shadow: 0 0 0 1px $black;
 }
 
-.btn-group,
-.input-group-append,
-.input-group-prepend {
-	.btn:not(:focus) {
+.btn-group .btn,
+.input-group .form-control,
+.input-group-append .btn,
+.input-group-prepend .btn {
+	&:not(:focus) {
 		box-shadow: none;
 	}
+}
+
+// Fix square outline on groups.
+.btn-group {
+	border-radius: $btn-border-radius;
+}
+
+.btn-group-lg {
+	border-radius: $btn-border-radius-lg;
+}
+
+.btn-group-sm {
+	border-radius: $btn-border-radius-sm;
+}
+
+.input-group {
+	border-radius: $input-border-radius;
+}
+
+.input-group-lg {
+	border-radius: $input-border-radius-lg;
+}
+
+.input-group-sm {
+	border-radius: $input-border-radius-sm;
+}
+
+.list-group {
+	border-radius: $list-group-border-radius;
 }
 
 // Button hover text color
