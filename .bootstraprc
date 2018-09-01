@@ -13,11 +13,12 @@ styles:
 
   alert: true
   badge: true
+  breadcrumb: true
   button-group: true
   buttons: true
   card: true
-  code: true
   close: true
+  code: true
   forms: true
   grid: true
   input-group: true
