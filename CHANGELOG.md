@@ -3,10 +3,12 @@
 ## 1.1.0
 
 - Upgrade to stable release of Bootstrap 4.
-- Add `.badge` styles.
-- Add `.breadcrumb` styles.
-- Add code styles.
-- Add `.list-group` styles.
+- Add styles for:
+  - `.badge`
+  - `.breadcrumb`
+  - `.list-group`
+  - Code text
+  - Border utilities
 - Add dark theme colour.
 - Add outline around alerts, button groups, form controls, input groups, and tables.
 - Brighten utility text colour styles.
