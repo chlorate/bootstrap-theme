@@ -24,7 +24,8 @@ body {
 // Drop shadow
 body,
 .btn,
-.form-control {
+.form-control,
+.popover {
 	text-shadow: 1px 0 black, 0 1px black, 1px 1px black;
 }
 
@@ -47,6 +48,7 @@ hr {
 .form-control,
 .input-group,
 .list-group,
+.popover,
 .progress,
 .table-bordered {
 	box-shadow: 0 0 0 1px $black;
@@ -120,6 +122,11 @@ a.btn:not(.btn-link):focus {
 // Badges: better vertical centering.
 .badge {
 	vertical-align: 12%;
+}
+
+// Popover: header border color.
+.popover-header {
+	border-bottom-color: $popover-border-color;
 }
 
 // Alert theme colors: dark background and light text.

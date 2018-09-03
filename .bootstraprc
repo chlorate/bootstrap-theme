@@ -24,6 +24,7 @@ styles:
   input-group: true
   list-group: true
   mixins: true
+  popover: true
   print: true
   progress: true
   reboot: true

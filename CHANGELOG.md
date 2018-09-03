@@ -7,6 +7,7 @@
   - `.badge`
   - `.breadcrumb`
   - `.list-group`
+  - `.popover`
   - Code text
   - Border utilities
 - Add dark theme colour.
