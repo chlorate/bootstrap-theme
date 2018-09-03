@@ -36,7 +36,7 @@ $breadcrumb-bg: $gray-1000;
 $card-spacer-x: 0.75rem;
 $card-spacer-y: 0.5rem;
 $card-bg: $gray-1100;
-$card-border-color: $gray-800;
+$card-border-color: $border-color;
 $card-cap-bg: $gray-1000;
 
 $close-color: #fff;
@@ -51,10 +51,10 @@ $font-size-sm: 0.8125rem;
 
 $headings-font-weight: bold;
 
-$hr-border-color: $gray-800;
+$hr-border-color: $border-color;
 
 $input-bg: $gray-1000;
-$input-border-color: $gray-800;
+$input-border-color: $border-color;
 $input-color: $body-color;
 $input-disabled-bg: $gray-1100;
 
@@ -68,12 +68,13 @@ $list-group-action-active-color: $link-hover-color;
 $list-group-action-color: $link-color;
 $list-group-action-hover-color: $link-hover-color;
 $list-group-bg: $gray-1100;
-$list-group-border-color: $gray-800;
+$list-group-border-color: $border-color;
 $list-group-hover-bg: $gray-1000;
 
-$nav-tabs-border-color: $gray-800;
+$nav-tabs-border-color: $border-color;
 $nav-tabs-link-active-bg: $body-bg;
-$nav-tabs-link-active-border-color: $gray-800 $gray-800 $nav-tabs-link-active-bg;
+$nav-tabs-link-active-border-color: $border-color $border-color
+	$nav-tabs-link-active-bg;
 $nav-tabs-link-active-color: $body-color;
 $nav-tabs-link-hover-border-color: $gray-900 $gray-900 $nav-tabs-border-color;
 
@@ -91,4 +92,4 @@ $progress-bar-color: $yiq-text-light;
 $small-font-size: 0.8125rem;
 
 $table-hover-bg: $gray-1000;
-$table-border-color: $gray-800;
+$table-border-color: $border-color;
