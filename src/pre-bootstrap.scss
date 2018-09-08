@@ -9,13 +9,13 @@ $gray-900: #212529;
 // Custom colors
 
 $theme-colors: (
-	primary: #28546c,
-	secondary: $gray-800,
-	info: #1d5758,
-	success: #295229,
-	warning: #574e23,
-	danger: #752f2d,
-	dark: #111,
+  primary: #28546c,
+  secondary: $gray-800,
+  info: #1d5758,
+  success: #295229,
+  warning: #574e23,
+  danger: #752f2d,
+  dark: #111
 );
 
 $gray-1000: darken($gray-900, 5%);
@@ -81,7 +81,7 @@ $list-group-hover-bg: $gray-1000;
 $nav-tabs-border-color: $border-color;
 $nav-tabs-link-active-bg: $body-bg;
 $nav-tabs-link-active-border-color: $border-color $border-color
-	$nav-tabs-link-active-bg;
+  $nav-tabs-link-active-bg;
 $nav-tabs-link-active-color: $body-color;
 $nav-tabs-link-hover-border-color: $gray-900 $gray-900 $nav-tabs-border-color;
 

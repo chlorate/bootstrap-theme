@@ -1,24 +1,24 @@
 @font-face {
-	font-family: retro16;
-	src: local(retro16), url(retro16.ttf);
+  font-family: retro16;
+  src: local(retro16), url(retro16.ttf);
 }
 
 @font-face {
-	font-family: retro8;
-	src: local(retro8), url(retro8.ttf);
+  font-family: retro8;
+  src: local(retro8), url(retro8.ttf);
 }
 
 html,
 body {
-	height: 100%;
-	overflow: auto;
-	font-feature-settings: "kern";
+  height: 100%;
+  overflow: auto;
+  font-feature-settings: "kern";
 }
 
 // Make buttons and inputs use the current font.
 .btn,
 .form-control {
-	font-family: inherit;
+  font-family: inherit;
 }
 
 // Drop shadow
@@ -26,16 +26,16 @@ body,
 .btn,
 .form-control,
 .popover {
-	text-shadow: 1px 0 black, 0 1px black, 1px 1px black;
+  text-shadow: 1px 0 black, 0 1px black, 1px 1px black;
 }
 
 .badge-light,
 .list-group-item-light.active {
-	text-shadow: 1px 0 $gray-500, 0 1px $gray-500, 1px 1px $gray-500;
+  text-shadow: 1px 0 $gray-500, 0 1px $gray-500, 1px 1px $gray-500;
 }
 
 hr {
-	box-shadow: 1px 0 black, 0 1px black, 1px 1px black;
+  box-shadow: 1px 0 black, 0 1px black, 1px 1px black;
 }
 
 // Box outline
@@ -51,50 +51,50 @@ hr {
 .popover,
 .progress,
 .table-bordered {
-	box-shadow: 0 0 0 1px $black;
+  box-shadow: 0 0 0 1px $black;
 }
 
 .btn-group .btn,
 .input-group .form-control,
 .input-group-append .btn,
 .input-group-prepend .btn {
-	&:not(:focus) {
-		box-shadow: none;
-	}
+  &:not(:focus) {
+    box-shadow: none;
+  }
 }
 
 // Fix square outline on groups.
 .btn-group {
-	border-radius: $btn-border-radius;
+  border-radius: $btn-border-radius;
 }
 
 .btn-group-lg {
-	border-radius: $btn-border-radius-lg;
+  border-radius: $btn-border-radius-lg;
 }
 
 .btn-group-sm {
-	border-radius: $btn-border-radius-sm;
+  border-radius: $btn-border-radius-sm;
 }
 
 .input-group {
-	border-radius: $input-border-radius;
+  border-radius: $input-border-radius;
 }
 
 .input-group-lg {
-	border-radius: $input-border-radius-lg;
+  border-radius: $input-border-radius-lg;
 }
 
 .input-group-sm {
-	border-radius: $input-border-radius-sm;
+  border-radius: $input-border-radius-sm;
 }
 
 .list-group {
-	border-radius: $list-group-border-radius;
+  border-radius: $list-group-border-radius;
 }
 
 // Button hover text color
 a.btn:not(.btn-link):focus {
-	color: $white;
+  color: $white;
 }
 
 // Secondary background text color: slightly darker.
@@ -105,78 +105,78 @@ a.btn:not(.btn-link):focus {
 .btn-secondary:hover,
 .btn-secondary:not(:disabled):not(.disabled):active,
 .btn-secondary:not(:disabled):not(.disabled):active:focus {
-	color: #ccc;
+  color: #ccc;
 }
 
 // Close button: fix vertical centring.
 .close {
-	line-height: 1.5625rem;
+  line-height: 1.5625rem;
 }
 
 // Use card background color for card header tabs.
 .card-header-tabs .nav-link.active {
-	background: $card-bg;
-	border-bottom-color: $card-bg;
+  background: $card-bg;
+  border-bottom-color: $card-bg;
 }
 
 // Badges: better vertical centering.
 .badge {
-	vertical-align: 12%;
+  vertical-align: 12%;
 }
 
 // Popover: header border color.
 .popover-header {
-	border-bottom-color: $popover-border-color;
+  border-bottom-color: $popover-border-color;
 }
 
 // Alert theme colors: dark background and light text.
 @each $color, $value in $theme-colors {
-	.alert-#{$color} {
-		@include alert-variant(
-			theme-color-level($color, 8),
-			theme-color-level($color, 3),
-			theme-color-level($color, -8)
-		);
-	}
+  .alert-#{$color} {
+    @include alert-variant(
+      theme-color-level($color, 8),
+      theme-color-level($color, 3),
+      theme-color-level($color, -8)
+    );
+  }
 }
 
 // Theme colors: dark background instead of light and lighten on hover instead
 // of darken.
 @each $color, $value in $theme-colors {
-	$text: lighten($value, 30%);
-	$background: theme-color-level($color, 8);
-	$hover-background: lighten($background, 5%);
+  $text: lighten($value, 30%);
+  $background: theme-color-level($color, 8);
+  $hover-background: lighten($background, 5%);
 
-	@include list-group-item-variant($color, $background, $text);
-	@include table-row-variant($color, $background);
-	@include text-emphasis-variant(".text-#{$color}", $text);
+  @include list-group-item-variant($color, $background, $text);
+  @include table-row-variant($color, $background);
+  @include text-emphasis-variant(".text-#{$color}", $text);
 
-	.list-group-item-#{$color}.list-group-item-action {
-		@include hover-focus {
-			background-color: $hover-background;
-		}
+  .list-group-item-#{$color}.list-group-item-action {
+    @include hover-focus {
+      background-color: $hover-background;
+    }
 
-		&.active {
-			background-color: $text;
-		}
-	}
+    &.active {
+      background-color: $text;
+    }
+  }
 
-	.table-#{$color} {
-		color: $text;
-	}
+  .table-#{$color} {
+    color: $text;
+  }
 
-	.table-hover .table-#{$color} {
-		@include hover {
-			background-color: $hover-background;
+  .table-hover .table-#{$color} {
+    @include hover {
+      background-color: $hover-background;
 
-			> td,
-			> th {
-				background-color: $hover-background;
-			}
-		}
-	}
+      > td,
+      > th {
+        background-color: $hover-background;
+      }
+    }
+  }
 }
 
 .list-group-item-action.list-group-item-light.active {
-	color: black;
+  color: black;
 }

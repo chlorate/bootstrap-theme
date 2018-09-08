@@ -1,6 +1,8 @@
 NPM_CHECK=node_modules/.bin/npm-check
+PRETTIER=node_modules/.bin/prettier
 WEBPACK=node_modules/.bin/webpack
 WEBPACK_DEV_SERVER=node_modules/.bin/webpack-dev-server
+
 EXTERNAL_FILES=src/retro8.ttf src/retro16.ttf
 
 .PHONY: build
@@ -11,6 +13,10 @@ build: $(EXTERNAL_FILES) node_modules
 .PHONY: watch
 watch: $(EXTERNAL_FILES) node_modules
 	$(WEBPACK_DEV_SERVER) --mode development
+
+.PHONY: format
+format: node_modules
+	$(PRETTIER) --write {*,src/**/*}.{js,json,md,scss}
 
 .PHONY: clean
 clean: 
