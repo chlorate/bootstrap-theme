@@ -1,4 +1,4 @@
-NCU=node_modules/.bin/ncu
+NPM_CHECK=node_modules/.bin/npm-check
 WEBPACK=node_modules/.bin/webpack
 WEBPACK_DEV_SERVER=node_modules/.bin/webpack-dev-server
 EXTERNAL_FILES=src/retro8.ttf src/retro16.ttf
@@ -22,7 +22,7 @@ clean-deps:
 
 .PHONY: upgrade
 upgrade:
-	$(NCU) --upgrade
+	$(NPM_CHECK) --update --save-exact
 
 node_modules: package.json
 	npm install
