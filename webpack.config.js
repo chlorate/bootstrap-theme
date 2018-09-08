@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
 	entry: {
-		styles: "bootstrap-loader",
+		styles: "./src/index.scss",
 	},
 	output: {
 		filename: "[name].[chunkhash].js",
@@ -13,6 +13,10 @@ module.exports = {
 	},
 	module: {
 		rules: [
+			{
+				test: /\.scss$/,
+				use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+			},
 			{
 				test: /\.ttf$/,
 				use: {
