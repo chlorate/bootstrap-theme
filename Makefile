@@ -12,7 +12,7 @@ build: $(EXTERNAL_FILES) node_modules
 
 .PHONY: watch
 watch: $(EXTERNAL_FILES) node_modules
-	$(WEBPACK_DEV_SERVER) --mode development
+	$(WEBPACK_DEV_SERVER) --mode development --host 0.0.0.0
 
 .PHONY: format
 format: node_modules
