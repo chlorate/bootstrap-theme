@@ -1,11 +1,11 @@
 @font-face {
   font-family: retro16;
-  src: local(retro16), url(retro16.ttf);
+  src: local(retro16), url(#{$theme-path}retro16.ttf);
 }
 
 @font-face {
   font-family: retro8;
-  src: local(retro8), url(retro8.ttf);
+  src: local(retro8), url(#{$theme-path}retro8.ttf);
 }
 
 html,

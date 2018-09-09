@@ -1,3 +1,7 @@
+// Path to src directory for resolving font fonts. The default assumes you use
+// webpack and bootstrap-theme can be found in node_modules.
+$theme-path: "~bootstrap-theme/src/" !default;
+
 // Copied Bootstrap colors
 //
 // This file is loaded before these variables can be used.
