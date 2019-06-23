@@ -10,8 +10,9 @@
   - `.popover`
   - Code text
   - Border utilities
-- Add dark theme colour.
+- Add light and dark theme colours.
 - Add outline around alerts, button groups, form controls, input groups, and tables.
+- Add border around progress bars.
 - Brighten utility text colour styles.
 - Tweak colours slightly to improve contrast.
 - Enable font kerning for Edge.
