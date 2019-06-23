@@ -143,10 +143,6 @@ hr {
     }
   }
 
-  .table-#{$color} {
-    color: $text;
-  }
-
   .table-hover .table-#{$color} {
     @include hover {
       background-color: $hover-background;
