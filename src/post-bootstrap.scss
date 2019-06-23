@@ -49,17 +49,12 @@ hr {
   box-shadow: 0 0 0 1px $black;
 }
 
+.btn-group .btn:not(:focus),
+.input-group .form-control:not(:focus),
+.input-group-append .btn:not(:focus),
+.input-group-prepend .btn:not(:focus),
 .list-group-flush {
   box-shadow: none;
-}
-
-.btn-group .btn,
-.input-group .form-control,
-.input-group-append .btn,
-.input-group-prepend .btn {
-  &:not(:focus) {
-    box-shadow: none;
-  }
 }
 
 // Fix square outline on groups.
