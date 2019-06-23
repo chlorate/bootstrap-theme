@@ -114,6 +114,11 @@ hr {
   border-bottom-color: $popover-border-color;
 }
 
+// Progress bars: add border.
+.progress {
+  border: 1px solid $border-color;
+}
+
 // Theme colors: dark background instead of light and lighten on hover instead
 // of darken.
 @each $color, $value in $theme-colors {
