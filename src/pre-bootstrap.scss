@@ -31,6 +31,10 @@ $yiq-text-light: #eee;
 
 $text-muted: #727b83;
 
+$alert-bg-level: 8;
+$alert-border-level: 3;
+$alert-color-level: -8;
+
 $badge-font-weight: normal;
 
 $blockquote-small-color: $text-muted;
@@ -102,5 +106,7 @@ $progress-bar-color: $yiq-text-light;
 
 $small-font-size: 0.8125rem;
 
-$table-hover-bg: $gray-1000;
+$table-bg-level: 8;
 $table-border-color: $border-color;
+$table-border-level: 3;
+$table-hover-bg: $gray-1000;
