@@ -91,11 +91,6 @@ hr {
   border-radius: $list-group-border-radius;
 }
 
-// Button hover text color
-a.btn:not(.btn-link):focus {
-  color: $white;
-}
-
 // Secondary background text color: slightly darker.
 .badge-secondary,
 .badge-secondary[href]:hover,
