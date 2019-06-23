@@ -19,7 +19,8 @@ $theme-colors: (
   success: #295229,
   warning: #574e23,
   danger: #752f2d,
-  dark: #111
+  light: #666,
+  dark: #181818
 );
 
 $gray-1000: darken($gray-900, 5%);

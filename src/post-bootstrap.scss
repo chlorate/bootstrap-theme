@@ -23,12 +23,6 @@ body,
   text-shadow: 1px 0 black, 0 1px black, 1px 1px black;
 }
 
-.badge-light,
-.btn-light,
-.list-group-item-light.active {
-  text-shadow: 1px 0 $gray-500, 0 1px $gray-500, 1px 1px $gray-500;
-}
-
 hr {
   box-shadow: 1px 0 black, 0 1px black, 1px 1px black;
 }
@@ -86,15 +80,17 @@ hr {
   border-radius: $list-group-border-radius;
 }
 
-// Secondary background text color: slightly darker.
-.badge-secondary,
-.badge-secondary[href]:hover,
-.badge-secondary[href]:focus,
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:not(:disabled):not(.disabled):active,
-.btn-secondary:not(:disabled):not(.disabled):active:focus {
-  color: #ccc;
+// Darken text colour on darker theme backgrounds.
+@each $color in ("secondary", "dark") {
+  .badge-#{$color},
+  .badge-#{$color}[href]:hover,
+  .badge-#{$color}[href]:focus,
+  .btn-#{$color},
+  .btn-#{$color}:hover,
+  .btn-#{$color}:not(:disabled):not(.disabled):active,
+  .btn-#{$color}:not(:disabled):not(.disabled):active:focus {
+    color: #ccc;
+  }
 }
 
 // Close button: fix vertical centring.
@@ -126,7 +122,12 @@ hr {
   $hover-background: lighten($background, 5%);
 
   @include list-group-item-variant($color, $background, $text);
-  @include text-emphasis-variant(".text-#{$color}", $text);
+
+  @if $color != "light" {
+    @include text-emphasis-variant(".text-#{$color}", $text);
+  } @else {
+    @include text-emphasis-variant(".text-#{$color}", $yiq-text-light);
+  }
 
   .list-group-item-#{$color}.list-group-item-action {
     @include hover-focus {
