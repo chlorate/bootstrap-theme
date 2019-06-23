@@ -135,7 +135,9 @@ hr {
     }
 
     &.active {
-      background-color: $text;
+      color: $component-active-color;
+      background-color: $value;
+      border-color: $value;
     }
   }
 
@@ -149,8 +151,4 @@ hr {
       }
     }
   }
-}
-
-.list-group-item-action.list-group-item-light.active {
-  color: black;
 }
