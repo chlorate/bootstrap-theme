@@ -13,6 +13,7 @@
 - Add light and dark theme colours.
 - Add outline around alerts, button groups, form controls, input groups, and tables.
 - Add border around progress bars.
+- Tweak table borders and remove 2px borders between `thead` and `tbody`.
 - Brighten utility text colour styles.
 - Tweak colours slightly to improve contrast.
 - Enable font kerning for Edge.
