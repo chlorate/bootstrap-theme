@@ -120,13 +120,15 @@ hr {
 }
 
 // Table borders
+.table:not(.table-bordered) {
+  thead:first-child tr:first-child th {
+    border-top: 0;
+  }
+}
+
 .table:not(.table-borderless) {
   thead tr th {
     border-bottom-width: $table-border-width;
-  }
-
-  thead:first-child tr:first-child th {
-    border-top: 0;
   }
 
   tbody + tbody {
