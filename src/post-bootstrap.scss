@@ -119,6 +119,28 @@ hr {
   border: 1px solid $border-color;
 }
 
+// Table borders
+.table:not(.table-borderless) {
+  thead tr th {
+    border-bottom-width: $table-border-width;
+  }
+
+  thead:first-child tr:first-child th {
+    border-top: 0;
+  }
+
+  tbody + tbody {
+    border-top-width: $table-border-width;
+  }
+
+  tbody:last-child tr:last-child {
+    td,
+    th {
+      border-bottom: $table-border-width solid $table-border-color;
+    }
+  }
+}
+
 // Theme colors: dark background instead of light and lighten on hover instead
 // of darken.
 @each $color, $value in $theme-colors {
